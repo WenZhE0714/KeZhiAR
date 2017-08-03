@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iQj-zo-lUg">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wIm-E0-gCr">
+            <objects>
+                <viewController id="iEN-6M-hlt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zxu-Pc-ldo"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHl-jt-91O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eeT-1J-iEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="sxX-v2-faf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4g2-YU-eIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1183" y="123"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="aUF-Mg-emB">
+            <objects>
+                <viewController id="Lcu-Ip-UuH" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MqP-FO-lsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Nz-y1-GZ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eST-cB-8Yu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Inm-XJ-EkF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1j-dT-uUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1183" y="-531"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="zq6-8p-rpl">
+            <objects>
+                <tabBarController id="Jq7-ez-hQZ" customClass="MainTabBarViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5eU-aQ-bY9"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="azB-Ab-hF6" customClass="MyTabBar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.30578234789999997" green="0.84624916319999999" blue="0.74241191149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lcu-Ip-UuH" kind="relationship" relationship="viewControllers" id="3pW-C7-aCH"/>
+                        <segue destination="iEN-6M-hlt" kind="relationship" relationship="viewControllers" id="q1C-Lb-iCK"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="a2j-v1-8aP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEA-1h-PmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2138" y="-205"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yF4-sT-WBV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="iQj-zo-lUg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jsC-Td-J6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jq7-ez-hQZ" kind="relationship" relationship="rootViewController" id="0oS-9e-7q8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLm-Ln-7Kd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3013" y="-206"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PersonalCenterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTi-bA-7aA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="153.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-IB-CzW" userLabel="我的收藏">
+                                        <rect key="frame" x="0.0" y="113.5" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.43946188688278198" green="0.87765002250671387" blue="0.79081779718399048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="WJd-ZA-Wj8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" red="0.95676869149999999" green="0.95692867039999996" blue="0.95674759149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" ♥   我的收藏"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZL-DE-qtD">
+                                        <rect key="frame" x="160" y="113.5" width="160" height="40"/>
+                                        <color key="backgroundColor" red="0.43946188688278198" green="0.87765002250671387" blue="0.79081779718399048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gPQ-Vz-tud"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="☁   我的上传">
+                                            <color key="titleColor" red="0.95676869149999999" green="0.95692867039999996" blue="0.95674759149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwZ-1u-c0K">
+                                        <rect key="frame" x="160" y="123.5" width="1" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="0.5" id="GgP-Az-Tku"/>
+                                            <constraint firstAttribute="height" constant="20" id="R9f-cA-M0R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30578234791755676" green="0.84624916315078735" blue="0.74241191148757935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dKf-IB-CzW" firstAttribute="leading" secondItem="uTi-bA-7aA" secondAttribute="leading" id="2nq-f2-jKW"/>
+                                    <constraint firstItem="XwZ-1u-c0K" firstAttribute="centerX" secondItem="uTi-bA-7aA" secondAttribute="centerX" id="Bg0-m9-fAe"/>
+                                    <constraint firstItem="5ZL-DE-qtD" firstAttribute="leading" secondItem="XwZ-1u-c0K" secondAttribute="leading" id="GCg-wC-nnq"/>
+                                    <constraint firstItem="dKf-IB-CzW" firstAttribute="baseline" secondItem="5ZL-DE-qtD" secondAttribute="baseline" id="LCF-aw-MZt"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ZL-DE-qtD" secondAttribute="bottom" id="N84-xv-4NL"/>
+                                    <constraint firstAttribute="bottom" secondItem="dKf-IB-CzW" secondAttribute="bottom" id="SOT-V0-G5V"/>
+                                    <constraint firstItem="XwZ-1u-c0K" firstAttribute="centerY" secondItem="dKf-IB-CzW" secondAttribute="centerY" id="VaI-Dw-KnO"/>
+                                    <constraint firstItem="5ZL-DE-qtD" firstAttribute="height" secondItem="dKf-IB-CzW" secondAttribute="height" id="bSZ-fE-qZT"/>
+                                    <constraint firstAttribute="height" constant="153.5" id="ejb-X8-s5g"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ZL-DE-qtD" secondAttribute="trailing" id="hs0-Yd-vDt"/>
+                                    <constraint firstItem="5ZL-DE-qtD" firstAttribute="leading" secondItem="dKf-IB-CzW" secondAttribute="trailing" id="l99-Qq-jle"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9567686915397644" green="0.95692867040634155" blue="0.95674759149551392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uTi-bA-7aA" secondAttribute="trailing" id="6bN-fn-7FD"/>
+                            <constraint firstItem="uTi-bA-7aA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E8a-u8-cqv"/>
+                            <constraint firstItem="uTi-bA-7aA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g48-XK-BKU"/>
+                            <constraint firstItem="uTi-bA-7aA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u4m-Ld-VQD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zlZ-Up-fre"/>
+                    <connections>
+                        <outlet property="myFavorBtn" destination="dKf-IB-CzW" id="hC2-zt-rr6"/>
+                        <outlet property="upView" destination="uTi-bA-7aA" id="CJl-6a-WDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2139.375" y="465.84507042253523"/>
+        </scene>
+    </scenes>
+</document>
